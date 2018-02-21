@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>APOD</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/Nasa-Logo-Transparent-Background-download.png" type="image/png">
+</head>
+<body>
+  <!--
+    <div id="preloader" class="container-fluid center col xl12 col l12 col m12 col s12">
+      <img src="assets/img/preloader.gif" alt="">
+    </div>
+    -->
+  <nav>
+    <div class="nav-wrapper teal accent-4">
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a href="#!">lOGIN</a></li>
+       <li><a href="#!">REGISTER</a></li>
+     </ul>
+    </div>
+  </nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 center">
+      <a class="waves-effect waves-light btn" id="pictureoftheday">Picture of the day</a>
+      <a class="waves-effect waves-light btn" id="earth">Earth</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12" id="contenedorVacio">
+      <!-- CONTENEDOR VACÍO -->
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <div class="col xl12 col l12 col m12 col s12 center" id="second-screen">
+        
+        <img class="responsive-img" id="apod_img_id" width="600px"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container">
+        <div class="col xl12 col l12 col m12 col s12 second-screen">
+          <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+          <p id="copyright"></p>
+          <h4 id="apod_title" class="center"></h4>
+          <p id="apod_explaination"></p>
+          <br/>
+        </div>
+      </div>
+    </div>
+<div id="vacio">
+  
+</div>
+  <section id="search-section">
+    <div class="container">
+      <input type="text" id="input-search">
+      <a class="waves-effect waves-light btn" id="search" >search</a>
+    </div>
+    <div class="container" id="image-container">
+      <!-- Div que recibe la imagen de la búsqueda -->
+      <iframe id="my_image" type="text/html" width="640" height="385" frameborder="0"></iframe>
+    </div>
+  </section>
+    <div class="container">
+    </div>
+    
+  <section id="earth-section">
+    <div class="row">
+      <div class="container">
+        <div class="col xl12 col l12 col m12 col s12 second-screen">
+          <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+          <p id="copyright"></p>
+          <h4 id="apod_title" class="center"></h4>
+          <p id="apod_explaination"></p>
+          <br/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
+<!-- Obtenga su clave de API -->
+<!-- Su clave de API para saa.lizama@gmail.com es: 
+
+uZqjUdT9VR4OPl2blitAZDgVQLxEtTIzJd4DKTJj
+Puede comenzar a utilizar esta clave para realizar solicitudes de servicio web. Simplemente pase su clave en la URL al hacer una solicitud web. Aquí hay un ejemplo:
+
+https://api.nasa.gov/planetary/apod? api_key = uZqjUdT9VR4OPl2blitAZDgVQLxEtTIzJd4DKTJj
+Para soporte adicional, contáctenos . Al contactarnos, díganos a qué API está accediendo y proporcione los siguientes detalles de cuenta para que podamos encontrarlo rápidamente:
+
+Correo electrónico de la cuenta: saa.lizama@gmail.com 
+ID de la cuenta: f74aa465-79a8-4a37-aef2-df29618e2c0a-->
