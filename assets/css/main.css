@@ -1,5 +1,6 @@
 body {
- background: url(../img/background.jpg);
- background-repeat: no-repeat;
- color: #fff;
+ background: url(../img/universo.jpg);
+ background-repeat: repeat;
+ color: gray;
 }
+

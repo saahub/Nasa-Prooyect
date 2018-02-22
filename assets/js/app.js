@@ -60,7 +60,7 @@ function showSecondInfo(info) {
   console.log(info.url)
   $('#contenedorVacio').empty()
   //$('#contenedorVacio').append(`<img src="${info.url}"`);
-  $('#contenedorVacio').append(`<img src="${info.url}" alt="">`);
+  $('#contenedorVacio').append(`<img src="${info.url} alt=""><div class="responsive-img"</div>`);
 }
 
 // boton de busqueda
@@ -88,12 +88,14 @@ $('#search').click(function() {
            $('#contenedorVacio').append(`
            <div class="col s12 xl12 col l12 col m12">
            <div class="video-container">
-           <iframe class="responsive-video" controls autoplay="false" src="${el.url}" type="text/html" frameborder="0"></iframe>
+           
            </div>
            </div>`);
            */
           console.log(el)
-           $('#image-container').append(`<img src="${el}" alt="">`);
+           $('#image-container').append(`<div class="col s12 xl12 col l12 col m12">
+            <iframe class="responsive-video" controls autoplay="false" src="${el.url}" type="text/html" frameborder="0"></iframe>
+            <img src="${el}" alt="" class="responsive-img"></div>`);
        });
      }
    })
@@ -101,3 +103,6 @@ $('#search').click(function() {
    }
  })
 });
+
+
+

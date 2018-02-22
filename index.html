@@ -4,36 +4,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>APOD</title>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <title>Nasa Proyect</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/img/Nasa-Logo-Transparent-Background-download.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- <link rel="shortcut icon" href="assets/img/Nasa-Logo-Transparent-Background-download.png" type="image/png"> -->
 </head>
 <body>
-  <!--
-    <div id="preloader" class="container-fluid center col xl12 col l12 col m12 col s12">
-      <img src="assets/img/preloader.gif" alt="">
-    </div>
-    -->
-  <nav>
-    <div class="nav-wrapper teal accent-4">
+<!--barra navegacion-->
+    <nav>
+    <div class="nav-wrapper purple darken-4">
        <ul id="nav-mobile" class="right hide-on-med-and-down">
        <li><a href="#!">lOGIN</a></li>
        <li><a href="#!">REGISTER</a></li>
      </ul>
     </div>
   </nav>
-
+  <!--botones-->
 <div class="container">
   <div class="row">
-    <div class="col s12 center">
+    <div class="col xl12 col l12 col m12 col s12 center">
       <a class="waves-effect waves-light btn" id="pictureoftheday">Picture of the day</a>
       <a class="waves-effect waves-light btn" id="earth">Earth</a>
     </div>
   </div>
   <div class="row">
-    <div class="col s12" id="contenedorVacio">
+    <div class="col xl12 col l12 col m12 col s12" id="contenedorVacio">
       <!-- CONTENEDOR VACÍO -->
     </div>
   </div>
@@ -47,8 +43,8 @@
     </div>
     <div class="row">
       <div class="container">
-        <div class="col xl12 col l12 col m12 col s12 second-screen">
-          <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+        <div class="col xl12 col l12 col m12 col s12 center second-screen">
+          <iframe class="responsive-img" id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
           <p id="copyright"></p>
           <h4 id="apod_title" class="center"></h4>
           <p id="apod_explaination"></p>
@@ -56,7 +52,7 @@
         </div>
       </div>
     </div>
-<div id="vacio">
+<div id="vacio" class="col xl12 col l12 col m12 col s12 center >
   
 </div>
   <section id="search-section">
@@ -75,8 +71,8 @@
   <section id="earth-section">
     <div class="row">
       <div class="container">
-        <div class="col xl12 col l12 col m12 col s12 second-screen">
-          <iframe id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+        <div class="col xl12 col l12 col m12 col s12 second-screen ">
+          <iframe id="apod_vid_id" type="text/html" width="700" height="550" frameborder="0" ></iframe>
           <p id="copyright"></p>
           <h4 id="apod_title" class="center"></h4>
           <p id="apod_explaination"></p>
