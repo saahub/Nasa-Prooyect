@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Nasa Proyect</title>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
   <!-- <link rel="shortcut icon" href="assets/img/Nasa-Logo-Transparent-Background-download.png" type="image/png"> -->
@@ -14,37 +14,36 @@
 <!--barra navegacion-->
     <nav>
     <div class="nav-wrapper purple darken-4">
-       <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><a href="#!">lOGIN</a></li>
-       <li><a href="#!">REGISTER</a></li>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="#!">LOGIN</a></li>
+      <li><a href="#!">REGISTER</a></li>
      </ul>
     </div>
   </nav>
   <!--botones-->
 <div class="container">
   <div class="row">
-    <div class="col xl12 col l12 col m12 col s12 center">
+    <div class="col l12 m12 s12 center">
       <a class="waves-effect waves-light btn" id="pictureoftheday">Picture of the day</a>
       <a class="waves-effect waves-light btn" id="earth">Earth</a>
     </div>
   </div>
   <div class="row">
-    <div class="col xl12 col l12 col m12 col s12" id="contenedorVacio">
+    <div class="col s12" id="contenedorVacio">
       <!-- CONTENEDOR VACÍO -->
     </div>
   </div>
 </div>
 
     <div class="row">
-      <div class="col xl12 col l12 col m12 col s12 center" id="second-screen">
-        
-        <img class="responsive-img" id="apod_img_id" width="600px"/>
+      <div class="col s12 center responsive-img" id="second-screen">
+         <iframe class="responsive-img" id="apod_vid_id" type="text/html" width="640"  frameborder="0"></iframe>
       </div>
     </div>
     <div class="row">
       <div class="container">
-        <div class="col xl12 col l12 col m12 col s12 center second-screen">
-          <iframe class="responsive-img" id="apod_vid_id" type="text/html" width="640" height="385" frameborder="0"></iframe>
+        <div class="col l12 m12 s12 center second-screen">
+          
           <p id="copyright"></p>
           <h4 id="apod_title" class="center"></h4>
           <p id="apod_explaination"></p>
@@ -52,9 +51,6 @@
         </div>
       </div>
     </div>
-<div id="vacio" class="col xl12 col l12 col m12 col s12 center >
-  
-</div>
   <section id="search-section">
     <div class="container">
       <input type="text" id="input-search">
@@ -67,23 +63,18 @@
   </section>
     <div class="container">
     </div>
-    
   <section id="earth-section">
     <div class="row">
       <div class="container">
-        <div class="col xl12 col l12 col m12 col s12 second-screen ">
+        <div class="col l12 m12 s12 second-screen ">
           <iframe id="apod_vid_id" type="text/html" width="700" height="550" frameborder="0" ></iframe>
           <p id="copyright"></p>
           <h4 id="apod_title" class="center"></h4>
           <p id="apod_explaination"></p>
-          <br/>
         </div>
       </div>
     </div>
   </section>
-
-
-
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="assets/js/app.js"></script>
